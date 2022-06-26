@@ -11,10 +11,8 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 
+
 driver_options = webdriver.ChromeOptions()
-driver = webdriver.Chrome()
-
-
 driver = webdriver.Chrome()
 #driver.get("http://www.python.org")
 #assert "Python" in driver.title
@@ -29,7 +27,7 @@ class LandingPage(StartSelenium,unittest.TestCase):
         google_search_bar.send_keys("pycon")
         assert "Python" in driver.title
         
-    if __name__ == '__main__':
+if __name__ == '__main__':
         unittest.main()
         
 
