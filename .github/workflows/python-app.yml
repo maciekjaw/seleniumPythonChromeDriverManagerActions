@@ -36,4 +36,4 @@ jobs:
     - name: change to dit with test suits and run tests
       working-directory: ./Pages
       run: |
-        pytest
+        python -m unittest
