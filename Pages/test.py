@@ -13,10 +13,13 @@ class PythonOrgSearch(base.StartSelenium, unittest.TestCase):
         driver.get("http://www.python.org")
         self.assertIn("Python", driver.title)
         
-    def test_search_in_google(self):
-        google_search_bar = self.driver.find_element(By.CSS_SELECTOR, google_search_bar_selector).click()
+        
+        '''  
+            def test_search_in_google(self):
+            google_search_bar = self.driver.find_element(By.CSS_SELECTOR, google_search_bar_selector).click()
         google_search_bar.send_keys("pycon")
         assert "Python" in self.driver.title
+        '''
 
 if __name__ == "__main__":
     unittest.main()
