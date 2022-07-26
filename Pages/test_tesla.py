@@ -2,7 +2,7 @@ import unittest
 import base
 from selenium.webdriver.common.by import By
 
-import base
+SHOP_BTN:str = "tds-site-nav-item-text"
 
 class Tesla(base.StartSelenium, unittest.TestCase):
         
