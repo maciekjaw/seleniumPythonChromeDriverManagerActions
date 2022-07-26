@@ -13,7 +13,7 @@ class Tesla(base.StartSelenium, unittest.TestCase):
                 driver.get(url)
                 driver.find_element(By.CLASS_NAME, SHOP_BTN).click()
                 get_shop_url = driver.current_url
-                self.assertEqual(get_shop_url, expected_url)
+                self.assertNotEqual(get_shop_url, expected_url)
         
 if __name__ == "__main__":
     unittest.main()
