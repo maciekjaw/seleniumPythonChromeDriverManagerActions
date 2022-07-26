@@ -1,10 +1,10 @@
 import unittest
-from Pages.test_base import StartSelenium as start
+import base
 from selenium.webdriver.common.by import By
 
-SHOP_BTN:str = "tds-site-nav-item-text"
+import base
 
-class LandingPage(start, unittest.TestCase):
+class Tesla(base.StartSelenium, unittest.TestCase):
         
         def test_go_to_tesla_shop(self, url:str = "https://www.tesla.com",expected_url:str = 'https://shop.tesla.com'):    
                 acctual_url:str = 'https://shop.tesla.com' 
