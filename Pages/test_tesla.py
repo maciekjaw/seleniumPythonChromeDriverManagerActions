@@ -7,7 +7,6 @@ SHOP_BTN:str = "tds-site-nav-item-text"
 class Tesla(base.StartSelenium, unittest.TestCase):
         
         def test_go_to_tesla_shop(self, url:str = "https://www.tesla.com",expected_url:str = 'https://shop.tesla.com'):    
-                acctual_url:str = 'https://shop.tesla.com' 
         
                 driver = self.driver
                 driver.get(url)
