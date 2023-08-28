@@ -28,8 +28,9 @@ jobs:
         python -m pip install --upgrade pip
         pip install selenium
         pip install webdriver-manager
+        pip install pytest-xdist
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Change to dir with tests and run tests
       working-directory: ./Pages
       run: |
-        python -m unittest
+        pytest -n auto
