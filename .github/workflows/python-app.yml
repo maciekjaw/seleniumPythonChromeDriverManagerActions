@@ -7,7 +7,7 @@ on:
   push:
     branches: [ "main" ]
   pull_request:
-    branches: [ "main" ]
+    branches  : [ "main" ]
 
 permissions:
   contents: read
@@ -33,4 +33,4 @@ jobs:
     - name: Change to dir with tests and run tests
       working-directory: ./Pages
       run: |
-        pytest -n 3
+        pytest -n auto
