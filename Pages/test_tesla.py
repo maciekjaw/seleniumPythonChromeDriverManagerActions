@@ -2,7 +2,7 @@ import unittest
 import base
 from selenium.webdriver.common.by import By
 
-SHOP_BTN:str = "Shop"
+SHOP_BTN:str = "Shop Now"
 
 class Tesla(base.StartSelenium, unittest.TestCase):
         
