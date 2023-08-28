@@ -2,7 +2,7 @@ import unittest
 import base
 from selenium.webdriver.common.by import By
 
-SHOP_BTN:str = "tds-site-nav-item-text"
+SHOP_BTN:str = "SHOP"
 
 class Tesla(base.StartSelenium, unittest.TestCase):
         
@@ -10,7 +10,7 @@ class Tesla(base.StartSelenium, unittest.TestCase):
         
                 driver = self.driver
                 driver.get(url)
-                driver.find_element(By.CLASS_NAME, SHOP_BTN).click()
+                driver.find_element(By.NAME, SHOP_BTN).click()
                 get_shop_url = driver.current_url
                 self.assertNotEqual(get_shop_url, expected_url)
         
